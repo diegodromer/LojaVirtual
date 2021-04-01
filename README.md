@@ -1,2 +1,2 @@
 # LojaVirtual
-Add criado em Android com Kotlin
+App criado em Android com Kotlin, para compra/cadastramento/entre outros de produtos
