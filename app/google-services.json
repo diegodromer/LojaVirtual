@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061236100203",
+    "project_id": "loja-virtual-520ec",
+    "storage_bucket": "loja-virtual-520ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061236100203:android:56f895b24c35da4129b52e",
+        "android_client_info": {
+          "package_name": "com.diegolima.lojavirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061236100203-uchb1ep1gq2ii08vfk5d1gcpdv39ojm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM3fZHp3kYFEe8H1Q18T6d0O0nxwqD4G8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061236100203-uchb1ep1gq2ii08vfk5d1gcpdv39ojm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
