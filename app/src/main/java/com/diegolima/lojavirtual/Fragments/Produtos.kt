@@ -6,8 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
-import android.widget.Toast
+import com.afollestad.materialdialogs.MaterialDialog
 import com.diegolima.lojavirtual.Model.Dados
 import com.diegolima.lojavirtual.R
 import com.google.firebase.firestore.FirebaseFirestore
@@ -47,9 +46,12 @@ class Produtos : Fragment() {
                 val pagamento = mAlertDialog.fm_pagamento.text.toString()
 
                 if (pagamento == "249,99") {
-                    Toast.makeText(context, "Pagamento Concluido", Toast.LENGTH_SHORT).show()
+                    MaterialDialog.Builder(requireContext())
+                        .title("Pagamento concluido")
+                        .content("Obrigado pela compra. Volte Sempre.")
+                        .show()
                 } else {
-                    Toast.makeText(context, "Pagamento Recusado", Toast.LENGTH_SHORT).show()
+
                 }
             }
 

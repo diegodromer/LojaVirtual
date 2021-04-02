@@ -60,11 +60,24 @@ class TelaPrincipal : AppCompatActivity(), NavigationView.OnNavigationItemSelect
             var intent = Intent(this, CadastroProdutos::class.java)
             startActivity(intent)
         }else if(id == R.id.nav_contato){
-
+            enviarEmail()
         }
         val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
         drawer.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun enviarEmail() {
+        val PACKAGEM_GOOGLEEMAIL = "com.google.android.gm"
+        val email = Intent(Intent.ACTION_SEND)
+        email.putExtra(Intent.EXTRA_EMAIL, arrayOf("")) //enviar um email
+        email.putExtra(Intent.EXTRA_SUBJECT, "") //ENVIAR UM ASSUNTO DE EMAIL
+        email.putExtra(Intent.EXTRA_TEXT, "") //DEFINIR UM TEXTO PARA O EMAIL
+
+        //configuracoes de apps de envio de email
+        email.type = "message/rec822"
+        email.setPackage(PACKAGEM_GOOGLEEMAIL)
+        startActivity(Intent.createChooser(email, "escolha o app de email"))
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
