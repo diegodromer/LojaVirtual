@@ -18,6 +18,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/drawer" />
 
+
     <TextView
         android:id="@+id/nomeProduto"
 
@@ -41,7 +42,7 @@
         android:layout_toEndOf="@id/fotoProduto"
         android:fontFamily="sans-serif-black"
         android:text="R$ 249,99"
-
+        android:textColor="@color/Preto"
         />
 
 </RelativeLayout>
