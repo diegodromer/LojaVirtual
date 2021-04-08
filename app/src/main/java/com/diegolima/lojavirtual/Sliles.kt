@@ -20,7 +20,7 @@ class Sliles : IntroActivity() {
                 .image(R.drawable.drawer)
                 .backgroundDark(R.color.Branco)
                 .title("Loja de Calçados")
-                .description("Entre e confira as promoções que proparamos para voçê!")
+                .description("Entre e confira as promoções que preparamos para voçê!")
                 .build()
         )
         addSlide(
